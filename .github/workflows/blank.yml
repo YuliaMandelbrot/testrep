@@ -24,9 +24,8 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
-Autotest:
-    build:
-    
+    Autotest:
+        
     runs-on: ubuntu-latest
 
         steps:
@@ -41,9 +40,8 @@ Autotest:
           echo Add other actions to build,
           echo test, and deploy your project.
 
-Deploy_on_prod:
-    build:
-    
+    Deploy_on_prod:
+        
     runs-on: ubuntu-latest
 
         steps:
