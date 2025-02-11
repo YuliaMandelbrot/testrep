@@ -1,37 +1,19 @@
-
 name: CI
 
 on:
-    push:
+  push:
     branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
 
 
 jobs:
-    build:
-    
+  build:
     runs-on: ubuntu-latest
 
-        steps:
+    steps:
       - uses: actions/checkout@v4
 
-      
-      - name: Run a one-line script
-        run: echo Hello, world!
-
-      - name: Run a multi-line script
-        run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
-    Autotest:
-        
-    runs-on: ubuntu-latest
-
-        steps:
-      - uses: actions/checkout@v4
-
-      
       - name: Run a one-line script
         run: echo Hello, world!
 
@@ -40,14 +22,12 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
 
-    Deploy_on_prod:
-        
+  autotest:
     runs-on: ubuntu-latest
 
-        steps:
+    steps:
       - uses: actions/checkout@v4
 
-      
       - name: Run a one-line script
         run: echo Hello, world!
 
@@ -56,4 +36,16 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
 
+  deploy_on_prod:
+    runs-on: ubuntu-latest
 
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Run a one-line script
+        run: echo Hello, world!
+
+      - name: Run a multi-line script
+        run: |
+          echo Add other actions to build,
+          echo test, and deploy your project.
