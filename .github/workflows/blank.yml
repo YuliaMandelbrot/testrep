@@ -52,7 +52,7 @@ jobs:
 
   deploy_on_prod:
     runs-on: ubuntu-latest
-    needs: [autotest_ui, autotest_inegration]
+    needs: [autotest_ui, autotest_integration]
     steps:
       - uses: actions/checkout@v4
 
